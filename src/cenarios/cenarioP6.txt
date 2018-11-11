@@ -1,0 +1,58 @@
+#------------------------------------------------------#
+#         Graduação em Ciência da Computação           #
+#                                                      #
+#    Orientador: Diego Mello Silva                     # 
+#    Aluno: Danilo da Silva Alves                      #
+#    Matrícula: 0002749                                #
+#                                                      #
+#------------------------------------------------------#
+
+#------------------------------------------------------#
+#             Cenario Basico Probabilistico			   #
+#		   											   #
+#------------------------------------------------------#
+#FOCO no i/o
+#Tempo de simulacao
+S TS 500
+
+#------------------------------------------------------#
+#                      Processo		  				   #
+#------------------------------------------------------#
+
+#Todos os dados sao probabilisticos e devem ser informados
+#na forma de uma distribuição triangular -> 
+#Exemplo: 1.0 5.0 10.0
+#-Se não houver, 0 0 0
+
+
+#Chegada de processos
+P CH 6.0
+
+#Prioridade do processo
+P PR 1 5 10
+
+#Tempo de Encerramento do processo
+P EN 0 0 0
+
+#Numero de IO Bursts
+P NI 1.0 2.0 5.0
+
+#Duracao dos IO Bursts
+P DI 5.0 10.0 15.0
+
+#Duracao dos CPU Bursts
+P DC 1.0 5.0 10.0
+
+#------------------------------------------------------#
+#                        CPU   						   #
+#------------------------------------------------------#
+
+#Quantidade de CPUs (Nucleos)
+C QT 4
+
+#------------------------------------------------------#
+#                    Dispositivo   					   #
+#------------------------------------------------------#
+
+#Quantidade de dispositivos
+D QT 4
